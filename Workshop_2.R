@@ -245,7 +245,8 @@ penguins2 %>%
   theme(legend.position = "bottom")
 
 # Using a pre-defined theme
-penguins2 %>%
+# (Also assigning plot object to a variable called "p" so that the plot can be saved to our computers)
+p <- penguins2 %>%
   ggplot(aes(x = flipper_length_mm,
              y = body_mass_g,
              colour = species,
@@ -261,6 +262,7 @@ penguins2 %>%
        shape = "Penguin species") +
   theme(legend.position = "bottom") +
   theme_minimal()
+p
 
 # Saving a ggplot
 # (Replace with your own filepath)
