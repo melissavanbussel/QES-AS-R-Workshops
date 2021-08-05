@@ -223,7 +223,7 @@ penguins2 %>%
   scale_y_continuous(labels = scales::comma) + 
   scale_colour_manual(values = c("darkorange", "purple", "cyan4")) +
   labs(x = "Flipper length (mm)",
-       y = "Bill length (mm)",
+       y = "Body mass (g)",
        colour = "Penguin species",
        shape = "Penguin species")
 
@@ -239,7 +239,7 @@ penguins2 %>%
   scale_y_continuous(labels = scales::comma) + 
   scale_colour_manual(values = c("darkorange", "purple", "cyan4")) + 
   labs(x = "Flipper length (mm)",
-       y = "Bill length (mm)",
+       y = "Body mass (g)",
        colour = "Penguin species",
        shape = "Penguin species") +
   theme(legend.position = "bottom")
